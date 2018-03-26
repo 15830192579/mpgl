@@ -54,10 +54,10 @@
                             </div>
                         </div>
                     </li>-->
-					<li><a href="#" class="active-menu-top"><i
+					<li><a href="#"><i
 							class="fa fa-desktop "></i>公司管理<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level collapse in">
-							<li><a href="/company/companyset.html" class="active-menu"><i class="fa fa-toggle-on"></i>属性设定</a>
+						<ul class="nav nav-second-level">
+							<li><a href="/company/companyset.html"><i class="fa fa-toggle-on"></i>属性设定</a>
 							</li>
 							<li><a href="#"><i
 									class="fa fa-bell "></i>管理团队添加</a></li>
@@ -92,10 +92,10 @@
                                 <a href="/staff/stafflist.html"><i class="fa fa-edit "></i>员工列表</a>
                             </li>
 						</ul></li>
-						<li><a href="#"><i class="fa fa-dashboard "></i>产品管理<span
+						<li><a href="#" class="active-menu-top"><i class="fa fa-dashboard "></i>产品管理<span
 							class="fa arrow"></span></a>
-							<ul class="nav nav-second-level">
-							<li><a href="/product/productadd.html"><i class="fa fa-bug "></i>添加产品
+							<ul class="nav nav-second-level collapse in">
+							<li><a href="/product/productadd.html" class="active-menu"><i class="fa fa-bug "></i>添加产品
 							</a></li>
 							<li>
                                 <a href="/product/productlist.html"><i class="fa fa-edit "></i>产品列表</a>
@@ -130,7 +130,7 @@
 			<div id="page-inner">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="page-head-line">属性设定</h1>
+						<h1 class="page-head-line">产品添加</h1>
 					</div>
 				</div>
 				<div class="row">
@@ -141,25 +141,26 @@
 									<div class="form-group">
 										<label>名称</label> <input class="form-control" type="text">
 									</div>
-									<div class="form-group">
-										<label>电话</label> <input class="form-control" type="text">
+									<div class="form-group" style="clear: both;">
+										<label>标题图</label>
+										<div>
+											<button style="width: 80px; height: 32px;"
+												class="btn btn-info">选择图片</button>
+										</div>
+										<div
+											style="width: 155px; height: 95px; border: 1px solid #999; margin-top: 11px;">
+											<img src="./assets/img/nopic.jpg"
+												style="width: 150px; height: 90px;" />
+										</div>
 									</div>
 									<div class="form-group">
-										<label>地址</label> <input class="form-control" type="text">
+										<label>详情</label>
+										<div style="width:700px;height:300px;"></div>
 									</div>
 									<div class="form-group">
-										<label>介绍</label> <input class="form-control" type="text">
+										<label>咨询电话</label> <input class="form-control" type="text">
 									</div>
-									<div class="form-group">
-										<label>行业</label> <input class="form-control" type="text">
-									</div>
-									<div class="form-group">
-										<label>成立日期</label> <input class="form-control" type="text">
-									</div>
-									<div class="form-group">
-										<label>注册资本</label> <input class="form-control" type="text">
-									</div>
-									<input type="submit" class="btn btn-info" value="提交" />
+									<input type="submit" class="btn btn-info" value="添加" />
 								</form>
 							</div>
 						</div>
@@ -168,7 +169,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- /. WRAPPER  -->
 	<div id="footer-sec">
 		Copyright &copy; 2018.chiyu All rights reserved.<a href="#"
 			target="_blank" title="驰宇科技">河北驰宇网络科技</a>
