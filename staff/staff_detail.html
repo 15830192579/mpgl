@@ -79,12 +79,12 @@
 							<li><a href="/department/departmentlist.html"><i
 									class="fa fa-code "></i>部门列表</a></li>
 						</ul></li>
-					<li><a href="#"><i class="fa fa-dashboard "></i>员工管理<span
-							class="fa arrow"></span></a>
-						<ul class="nav nav-second-level">
+					<li><a href="#" class="active-menu-top"><i
+							class="fa fa-dashboard "></i>员工管理<span class="fa arrow"></span></a>
+						<ul class="nav nav-second-level collapse in">
 							<li><a href="/staff/staffadd.html"><i class="fa fa-bug "></i>添加员工
 							</a></li>
-							<li><a href="/staff/stafflist.html"><i
+							<li><a href="/staff/stafflist.html" class="active-menu"><i
 									class="fa fa-edit "></i>员工列表</a></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-dashboard "></i>产品管理<span
@@ -95,12 +95,12 @@
 							<li><a href="/product/productlist.html"><i
 									class="fa fa-edit "></i>产品列表</a></li>
 						</ul></li>
-					<li><a href="#" class="active-menu-top"><i
-							class="fa fa-dashboard "></i>内容管理<span class="fa arrow"></span></a>
-						<ul class="nav nav-second-level collapse in">
+					<li><a href="#"><i class="fa fa-dashboard "></i>内容管理<span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
 							<li><a href="/content/contentadd.html"><i
 									class="fa fa-bug "></i>添加内容 </a></li>
-							<li><a href="/content/contentlist.html" class="active-menu"><i
+							<li><a href="/content/contentlist.html"><i
 									class="fa fa-edit "></i>内容列表</a></li>
 						</ul></li>
 					<li><a href="#"><i class="fa fa-square-o"></i>客户管理<span
@@ -118,79 +118,127 @@
 				</ul>
 			</div>
 		</nav>
-		<!-- /. NAV SIDE  -->
 		<div id="page-wrapper">
-			<div id="page-inner">
+			<div id="page-inner" style="min-height: auto;">
+				<div class="row"></div>
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="page-head-line">内容列表</h1>
-
-					</div>
-				</div>
-				<div style="width: 100%; height: 60px;">
-					<div style="width: 250px; height: 60px; float: left;">
-						<div style="margin-top: 15px;">
-							<h4 style="float: left;">时间：</h4>
-							<input type="search"
-								style="float: left; width: 150px; height: 33px; border: 1px solid #999; border-radius: 7px;"></input>
-						</div>
-					</div>
-					<div style="width: 250px; height: 60px; float: left;">
-						<div style="margin-top: 15px;">
-							<h4 style="float: left;">作者：</h4>
-							<input type="search"
-								style="float: left; width: 150px; height: 33px; border: 1px solid #999; border-radius: 7px;"></input>
-						</div>
-					</div>
-					<div style="width: 300px; height: 60px; float: left;">
-						<div style="margin-top: 15px;">
-							<h4 style="float: left;">审核者：</h4>
-							<input type="search"
-								style="float: left; width: 150px; height: 33px; border: 1px solid #999; border-radius: 7px;"></input>
-							<button type="submit" class="btn btn-info"
-								style="margin-left: 10px; width: 50px; height: 33px; float: left;">搜索
-							</button>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<strong>员工详情</strong>
+							</div>
+							<div class="panel-body">
+								<p>id：</p>
+								<p>
+									头像图<img src="./assets/img/user.png"
+										style="width: 35px; height: 35px; margin-left: 15px;" />
+								</p>
+								<p>
+									二维码<img src="./assets/img/user.png"
+										style="width: 35px; height: 35px; margin-left: 15px;" />
+								</p>
+								<p>昵称：</p>
+								<p>姓名：</p>
+								<p>手机号码：</p>
+								<p>职位：</p>
+								<p>邮箱：</p>
+								<p>备注：</p>
+								<p>工作电话：</p>
+								<p>转发次数：</p>
+								<p>转发次数：</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- /. ROW  -->
-				<div class="row">
-					<div class="col-md-12">
-						<div>
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12">
-									<div class="table-responsive">
-										<table class="table table-striped table-bordered table-hover">
-											<thead>
-												<tr>
-													<th>标题</th>
-													<th>头图</th>
-													<th>时间</th>
-													<th>作者</th>
-													<th>审核者</th>
-													<th>操作</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>--</td>
-													<td><img src="./assets/img/user.png"
-														style="width: 25px; height: 25px; margin-bottom: -7px; margin-top: -7px;" /></td>
-													<td>--</td>
-													<td>--</td>
-													<td>--</td>
-													<td><a href="content/watch.html"
-														style="color: black; margin-right: 10px;">预览</a> | <a
-														href="content/content_amend.html"
-														style="color: black; margin-left: 10px; margin-right: 10px;">修改</a>
-														| <a href="#"
-														style="color: black; margin-left: 10px; margin-right: 10px;">审核</a>
-														| <a href="#"
-														style="color: black; margin-left: 10px; margin-right: 10px;">删除</a>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+			</div>
+			<div class="row" style="">
+				<div class="col-md-12">
+					<h1 class="page-head-line">
+						<a style="color: black; margin-right: 20px">客户列表</a>
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>昵称</th>
+												<th>头像</th>
+												<th>性别</th>
+												<th>国家</th>
+												<th>城市</th>
+												<th>省</th>
+												<th>电话</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>--</td>
+												<td><img src="./assets/img/user.png"
+													style="width: 25px; height: 25px; margin-bottom: -7px; margin-top: -7px;" /></td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td><a href="staff/staff_detail1.html"
+													style="color: black; margin-right: 10px;">详情</a>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="">
+				<div class="col-md-12">
+					<h1 class="page-head-line">
+						<a style="color: black; margin-right: 20px">看过我的客户列表</a>
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="table-responsive">
+									<table class="table table-striped table-bordered table-hover">
+										<thead>
+											<tr>
+												<th>昵称</th>
+												<th>头像</th>
+												<th>性别</th>
+												<th>国家</th>
+												<th>城市</th>
+												<th>省</th>
+												<th>电话</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>--</td>
+												<td><img src="./assets/img/user.png"
+													style="width: 25px; height: 25px; margin-bottom: -7px; margin-top: -7px;" /></td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td>--</td>
+												<td><a href="staff/staff_detail2.html"
+													style="color: black; margin-right: 10px;">详情</a>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -199,6 +247,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- /. WRAPPER  -->
 	<div id="footer-sec">
 		Copyright &copy; 2018.chiyu All rights reserved.<a href="#"
 			target="_blank" title="驰宇科技">河北驰宇网络科技</a>
